@@ -2,7 +2,7 @@
 body {
     opacity: 96%;
     background-color: #0a1010;
-    background-image: url(background.jpg);
+    background-image: url(imgs/background.jpg);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Helvetica, sans-serif;
 }
 
@@ -12,7 +12,8 @@ header {
     color: #FFFFFF;
     height: 60px;
     text-align: left;
-    padding-top: 15px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     padding-left: 15px;
 }
 header a:link,
@@ -28,7 +29,7 @@ header a:hover {
 nav {
     position: sticky;
     top: 0;
-    z-index: 9999;
+    z-index: 10;
     background-color: #a4d3d6;
     color: #287277;
     font-weight: bold;
@@ -57,7 +58,13 @@ main {
 }
 
 .content_left {
-    width: 65%;
+    padding-right: 50px;
+    border-right: 3px solid #9bdde2;
+    width: 75%;
+}
+
+aside { 
+    width: 350px;
 }
 
 h1 {
@@ -76,15 +83,12 @@ h3 {
     margin: -1px;
     color:#823386;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Helvetica, sans-serif;
+    font-size: 20px;
 }
 
 #caption {
     text-align: center;
     font-size: 10px;
-}
-
-aside { 
-    width: 350px;
 }
 
 #aside_block {
@@ -102,16 +106,17 @@ aside {
 footer {
     background-color: #a4d3d6;
     font-family: Georgia, 'Times New Roman', serif;
-    font-size: 100%;
+    font-size: 80%;
     font-style: italic;
     text-align: center;
-    padding: 1.5em;
+    padding: 1em;
 }
 .footer-nav {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: normal;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     word-spacing: 5px;  
 }
 .footer-nav a {
@@ -119,6 +124,13 @@ footer {
 }
 
 /* --- IMAGES --------------------------------- */
+#imgcaption {
+    font-size: 100%;
+    text-indent: 10px;
+    padding-top: -30px;
+    
+}
+    /* --- HOME --------------------------------- */
 #homeimage {
     width: 300px;
     height: 300px;
@@ -133,6 +145,12 @@ footer {
     background-repeat: no-repeat;
     margin: 10px;
 }
+    /* --- REVIEWS --------------------------------- */
+#review1 {
+    width: 50%;
+    height: 50%;
+    margin: 10px;
+}
 
 /* --- OTHERS --------------------------------- */
 #wrapper {
@@ -140,4 +158,132 @@ footer {
     width: 80%;
     min-width: 960px;
     max-width: 2048px;
+}
+
+/* --- REVIEWS --------------------------------- */
+main.reviews-page {
+    align-items: stretch;
+}
+
+main.reviews-page aside {
+    width: 25%;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.reviews-page aside {
+    width: 25%;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.review-row {
+    overflow: auto;
+    margin-bottom: 10px;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.album-figure {
+    float: left;
+    width: 220px;
+    margin: 0 25px 15px 0;
+    width: 240px;
+}
+
+.album-figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 8px;
+}
+
+#imgcaption {
+    font-size: 95%;
+}
+
+.review-box h1 {
+    text-indent: 10px;
+    color: #185054
+}
+
+.artist-home img{
+    padding-left: 60px;
+    width: 60%;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.artist img{
+    padding-left: 25px;
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.review-box p {
+    text-indent: 10px;
+    color: #185054
+}
+
+figcaption {
+    color:#287277;
+}
+
+/* --- FAVORITES --------------------------------- */
+
+.gallery {  
+    display: flex; 
+    flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+    padding-top: 20px;
+    column-gap: 10px;
+    row-gap: 25px;
+    height: auto;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto;
+    border-right: 3px solid #9bdde2;
+}
+.gallery figure { 
+	z-index: 0;
+	opacity: .90;
+    background-color: aliceblue;
+    display: table;
+    font-size: 0.5em;
+    margin: 0;
+	text-align: center;
+    padding: 5px;
+	transition: all ease-out 1s;
+}
+.gallery figure:hover { 	
+    opacity: 1;
+	z-index: 999;
+	box-shadow: 3px 3px 3px #185054;
+	transform: scale(1.5);
+}
+.gallery figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    background-color: #a4d3d6;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 3px 3px 3px #185054;
+    opacity: 0;
+    font-size: 10px;
+}
+.gallery figure:hover figcaption {
+    opacity: 1;
+    font-size: 10px;
+}
+.favorites-page {
+    width: 25%;
+    padding-left: 20px;
+    padding-top: 20px;
+
+}
+.favorites-page img{
+    width: 150px;
+    height: auto;
 }
