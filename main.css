@@ -217,7 +217,7 @@ main.reviews-page aside {
 }
 
 .artist img{
-    padding-left: 25px;
+    padding-left: 15px;
     width: 80%;
     height: auto;
     display: block;
@@ -258,7 +258,7 @@ figcaption {
     margin: 0;
 	text-align: center;
     padding: 5px;
-	transition: all ease-out 1s;
+	transition: all ease-out 0.5s;
 }
 .gallery figure:hover { 	
     opacity: 1;
@@ -283,9 +283,15 @@ figcaption {
     width: 25%;
     padding-left: 20px;
     padding-top: 20px;
-
+    border-left: 3px solid #9bdde2;
 }
 .favorites-page img{
     width: 150px;
     height: auto;
+    padding-right: 10px;
+}
+.content_left_favorites {
+    padding-right: 50px;
+    border-right: 3px solid #9bdde2;
+    width: 75%;
 }
