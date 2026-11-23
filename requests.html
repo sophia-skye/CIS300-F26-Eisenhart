@@ -10,7 +10,13 @@
 <body>
   <div id="wrapper">
     <header>
-      <h1><a href="index.html">Headphones On</a></h1>
+      <div class="logo_space">
+        <a href="index.html">
+          <img src="imgs/logo.png" alt="Headphones On logo" class="logo">
+          <img src="imgs/logo_hover.png" alt="" class="logo_hover">
+        </a>
+      </div>
+      <img src="imgs/dancing_monkey.gif" alt="Dancing Monkey" class="monkey">
     </header>
 
 
@@ -25,34 +31,40 @@
   </nav>
 
   <main>
-    <div class="content_left">
+    <div>
       <br>
       <h1>Requests</h1>
-      <p>
-          *page in-progress*
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
+      <br>
+      <h3>"What's an album you like, that you think I would also like?"</h3>
+      <p style="text-indent: 40px;">
+          This has been one of my favorite questions to ask people.
+          I think someone's music taste can tell you a lot about a person and can be
+          a great conversation piece. Fill out this form to suggest a album
+          for me to listen to!
           <br>
           <br>
       </p>
+      <form method = "get">
+        Name <input type="text" name="name" id="name" required placeholder="your name">
+        <br>
+        Where are you from? <input type="text" name="from" id="from" required placeholder="country"> 
+        <br>
+        Recommended album <input type="text" name="album" id="album" required placeholder="album name">
+        <br>
+        Artist <input type="text" name="artist" id="artist" required placeholder="artist name">  
+        <br>
+        Why this album? <br>
+        <textarea name="why" id="why" rows="10" cols="40"></textarea>
+        <br><br>
+        <input type="submit" value="Submit!">
+    </form>
+    <br><br><br>
     </div>
 
     <aside>
-
+          <br><br><br><br><br><br><br><br><br><br><br><br>
+          <img src="imgs/snoopy.jpg" id="homeimage" alt="snoopy">
+          <figcaption style="text-align: center;">*Temporary Image</figcaption>
     </aside>
     
   </main>
